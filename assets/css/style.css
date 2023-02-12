@@ -1,0 +1,55 @@
+@font-face {
+    font-family: exo;
+    src: url(sansation_light.woff);
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins';
+    margin: 0;
+   
+} 
+
+
+.header{
+    display: flex;
+    background-color: #180A25;
+    justify-content: space-between;
+}
+
+.right{
+    display: flex;
+}
+
+.link{
+    text-decoration: none;
+    margin: 20px;
+}
+.link_name{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+   
+}
+
+
+
+@media screen and (max-width: 992px){
+
+    
+    
+   
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+
+}
+
+
+
