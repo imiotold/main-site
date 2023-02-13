@@ -120,11 +120,11 @@ for (let i = 0; i < hoverLinks.length; i++) {
 
   
 
-// drawer = document.querySelector(".drawer")
-// drawer.onclick = function () {
-//     navBar = document.querySelector(".right_head")
-//     navBar.classList.toggle("active")
-// }
+drawer = document.querySelector(".drawer")
+drawer.onclick = function () {
+    navBar = document.querySelector(".right")
+    navBar.classList.toggle("header_active")
+}
 
 
 

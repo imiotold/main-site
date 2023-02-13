@@ -20,6 +20,10 @@ li{
 
 /* header */
 
+.drawer{
+    display: none;
+}
+
 .header{
     height: 70px;
     display: flex;
@@ -42,7 +46,9 @@ li{
     display: flex;
 }
 
-
+.logo{
+    width: 70%;
+}
 
 .link{
     text-decoration: none;
@@ -165,9 +171,10 @@ li{
 
     background-image: url('../images/about/bg.svg');
     background-repeat: no-repeat;
-    background-position: bottom 300px right 300px;
-    margin-left: 150px;
-    margin-right: 150px;
+    background-position: bottom 240px right 320px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 90vh;
     display: flex;
     
 }
@@ -220,19 +227,26 @@ li{
     
 }
 
-
+.imiot_span{
+    background: linear-gradient(90deg, #E50384 0%, #8A1BF7 68.02%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
 
 
 /* our way */
 
 #our_way{
-    scroll-margin-top: 160px;
+    scroll-margin-top: 120px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 90px;
+    height: 100vh;
+    
 }
 
 
@@ -317,10 +331,11 @@ li{
     scroll-margin-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
+
 }
 
 .product_container{
-    padding-top: 60px;
+    padding-top: 10px;
     
 }
 
@@ -351,10 +366,10 @@ li{
     border-radius: 20px;
     background: linear-gradient(150deg, #201E2D 0%, #120F20 100%);
     padding: 30px;
-    padding-bottom: 80px;
     height: 200px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 150px;
 }
 
 .product_inlist:first-child{
@@ -420,9 +435,9 @@ li{
 
 #our_team{
     scroll-margin-top: 100px;
-    height: 86vh;
     margin-left: 100px;
     margin-right: 100px;
+    height: 100vh;
 }
 
 .scroll-container {
@@ -498,16 +513,17 @@ li{
     scroll-margin-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 130px;
 }
 
 .client_name{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .client_list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 .view_link{
@@ -572,12 +588,11 @@ li{
 
 #contact{
     scroll-margin-top: 100px;
-    height: 86vh;
     padding-left: 100px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px -.1px 0px 0px #000;
    
+    height: 100vh;
 }
 
 .form{
@@ -666,6 +681,14 @@ margin-top: 0px;
     text-decoration: none;
 }
 
+.footer_para span{
+    background: linear-gradient(90deg, #40EAF5 0%, #504DFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
 .footer_heading{
     color: grey;
     font-weight: bold;
@@ -692,7 +715,7 @@ margin-top: 0px;
     display: flex;
     justify-content: space-around;
     border: 1px solid #9256C8;
-    padding: 2px;
+    padding: 8px;
     width: 220px;
     padding-left: 20px;
     padding-right: 20px;
@@ -831,12 +854,34 @@ font-weight: bold;
     display: none;
 }
 
+.header_active{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    background: linear-gradient(150deg, #201E2D 0%, #120F20 100%);
+    width: 90%;
+    left: 0;
+    text-align: center;
+}
+
+.drawer{
+    width: 6%;
+    display: block;
+    padding-right: 50px;
+}
+
+
 .header{
     height: 40px;
 }
 
 .logo{
     width: 50%;
+}
+
+.media_container{
+    display: none ;
 }
 
 #home{
@@ -861,8 +906,8 @@ font-weight: bold;
 }
 
 #product{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: -20px;
+    margin-right: 20px;
 }
 
 #client{
@@ -870,10 +915,15 @@ font-weight: bold;
     margin-right: 30px;
 }
 
+#contact{
+    margin-left: 30px;
+    margin-right: 0px;
+}
+
 
 .home_heading{
     font-size: 30px;
-    width: 300px;
+    width: 200px;
 }
 
 .home_para{
@@ -882,30 +932,48 @@ font-weight: bold;
 
 .home-container{
     background: url('../images/home/gif.gif');
-    background-size: 50%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    background-position: 30px 0px;
+    background-position: -10px 0px;
 }
 
 .home-container{
     padding-left: 30px;
-    width: 600px;
+    width: 90%;
     padding-bottom: 50px;
 }
 
 .home_heading{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
+.explore_container{
 
+    margin-top: 50px;
 
+}
+
+}
 
 
 
 @media screen and (max-width: 600px) {
 
+    .client_heading{
+        margin-left: 30px;
+    }
+
+    .our_way_inlist{
+        margin-left: -134px;
+    }
+
+    .product_heading{
+        margin-left: 40px;
+       
+    }
+
     .img{
-        background-position: -150px 0px;
+        background-position: -226px 0px;
     }
     
     #about{
@@ -949,7 +1017,7 @@ font-weight: bold;
     }
     .our_way_right{
         padding: 20px;
-        margin-top: 50px;
+        margin-top: 10px;
         width: 90%;
     }
 
@@ -979,6 +1047,7 @@ font-weight: bold;
         will-change: transform;
         user-select: none;
         cursor: pointer;
+        margin-top: -50px;
         
     }
 
@@ -1087,9 +1156,126 @@ font-weight: bold;
         border-top: 0px;
     }
 
+    #contact{
+        scroll-margin-top: 100px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background: url('../images/contact/map-copy.svg');
+        background-size: 140%;
+        background-position: 23px;
+        background-repeat: no-repeat;
+        padding-bottom: 50px;
 
-       
+    }
+
+    #our_team{
+        height: 80vh;
+    }
+    
+    .left_contact{
+        display: none;
+    }
+
+    .form{
+        margin-top: 40px;
+        
+    }
+
+    .submit {
+        color: #fff;
+        border: 1px solid #F55240;
+        text-align: center;
+        width: 150px;
+        border-radius: 30px;
+        padding: 11px;
+        margin: 0;
+        margin-top: 0px;
+      }
+
+      .footer{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: -70px;
+        border-top: 0px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #client{
+        scroll-margin-top: 100px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .two{
+    margin-left: 0px;
+    }
+
+    .footer_para{
+        font-size: 10px;
+    }
+
+    .footer_heading{
+        font-size: 11px;
+    }
+
+    .footer_log{
+        width: 30%;
+    }
+    .three{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .playstore{
+        width: 50%;
+        height: 50%;
+        padding-top: 21px;
+    }
 }
 
 
 
+@media screen  and (max-width: 450px) {
+    
+    .bottom_text{
+        display: none;
+    }
+
+    .bottom_mobile_text{
+        display: block;
+        font-size: 12px;
+    }
+
+    #our_way{
+      
+    }
+
+    .product_inlist{
+        height: auto;    
+    }
+    
+    input{
+        background: none;
+        border: none;
+        font-size: 11px;
+        padding: 15px;
+        padding-left: 0px;
+        padding-right: 100px;
+        border-bottom: 1px solid grey;
+        margin-bottom: 25px;
+    }
+    
+    .email{
+        width: 300px;
+        padding-right: 0px;
+    }
+    
+
+}
