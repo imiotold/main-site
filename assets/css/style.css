@@ -171,7 +171,7 @@ li{
 
     background-image: url('../images/about/bg.svg');
     background-repeat: no-repeat;
-    background-position: bottom 240px right 320px;
+    background-position: bottom 380px right 480px;
     margin-left: 100px;
     margin-right: 100px;
     height: 90vh;
@@ -454,7 +454,7 @@ li{
     position: relative;
     display: flex;
     justify-content: space-between;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     transition: all 0.2s;
@@ -1278,6 +1278,13 @@ font-weight: bold;
     .email{
         width: 300px;
         padding-right: 0px;
+    }
+
+    #about{
+        scroll-margin-top: 100px;
+
+        background-position: bottom 130px left 0px;
+        
     }
     
 
