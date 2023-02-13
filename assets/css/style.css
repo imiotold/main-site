@@ -741,6 +741,10 @@ color: #F94612;
 font-weight: bold;
 }
 
+.bottom_mobile_text{
+    display: none;
+}
+
 /* responsive */
 
 
