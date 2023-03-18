@@ -11,7 +11,28 @@
   src: url('./assets/fonts/pptelegraf-ultrabold.otf');
 }
 
+/* start custom css */
 
+input[type=file]::file-selector-button {
+  background-color: #180A25E5;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 15px;
+  margin-right: 20px;
+  transition: .5s;
+}
+
+@media (max-width: 600px) {
+  input[type=file]::file-selector-button {
+    padding: 5px 8px;
+    margin-right: 7px;
+  }
+}
+
+
+
+
+/* end custom css */
 
 .App {
   text-align: center;

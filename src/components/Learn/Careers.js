@@ -51,8 +51,8 @@ const Careers = () => {
 
 const MainDiv = styled.div`
     color: #FFFFFF;
-    width: 1325px;
-    margin: auto;
+    // width: 1325px;
+    margin: auto 4rem;
     margin-top: 3rem;
     padding-left: 2.5rem;
     border: double 1px transparent;
@@ -60,10 +60,25 @@ const MainDiv = styled.div`
     background-image: linear-gradient(#180A25, #180A25), radial-gradient(circle at top left, #1CD6FF,#4A46FA,#A54BFF,#FF00F5);
     background-origin: border-box;
     background-clip: padding-box, border-box;
+
+    @media (max-width: 800px) {
+        padding-left:1.8rem;
+    }
+
+    @media (max-width: 600px) {
+        padding-left: 1rem;
+        border-radius: 15px;
+        margin: auto 1rem;
+        margin-top: 2rem;
+    }
 `
 
 const TopSecContainer = styled.div`
     display: flex;
+
+    @media (max-width: 1024px) {
+        display: block;
+    }
 `
 
 const TopHeadTxt = styled.h1`
@@ -74,10 +89,31 @@ const TopHeadTxt = styled.h1`
     font-size: 65px;
     margin-top: 5rem;
     margin-bottom: 0px;
+
+    @media (max-width: 1190px) {
+        font-size: 47.1px;
+        margin-top: 6rem;
+    }
+    
+    @media (max-widht: 1024px) {
+        font-size: 60px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 330px) {
+        font-size: 27px;
+    }
 `
 
 const TopImg = styled.img`
     flex-grow:: 1;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
 `
 
 const TopSubTxt = styled.h2`
@@ -86,6 +122,30 @@ const TopSubTxt = styled.h2`
     font-weight: 300;
     font-size: 27px;
     letter-spacing: 0.1rem;
+
+    @media (max-width: 1190px) {
+        font-size: 23px;
+    }
+
+    @media (max-width: 1024px) {
+        margin-top: 10px;
+        font-size: 23px;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 14.5px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 12px;
+        font-weight: 400px;
+    }
+
+    @media (max-width: 416px) {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
 `
 
 const TopInnerSpan = styled.span`
@@ -96,6 +156,14 @@ const ForMidContainer = styled.div`
     font-family: 'Poppins', sans-serif;
     margin-top: 6.5rem;
 
+    @media (max-width: 1024px) {
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+        margin-top: 0;
+    }
+
 `
 
 const SubHeadings = styled.h3`
@@ -103,10 +171,32 @@ const SubHeadings = styled.h3`
     font-weight: 600;
     font-size: 24px;
     margin-top: 3rem;
+
+    @media (max-width: 800px) {
+        font-size: 17px;
+        margin-top: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 12px;
+    }
 `
 
 const  ForUl = styled.ul`
     margin-left: 3rem;
+
+    @media (max-width: 800px) {
+        margin-left: 1.7rem;
+    }
+
+    @media (max-width: 600px) {
+        margin-left: 0;
+        padding-left: 30px;
+    }
+
+    @media (max-width: 330px) {
+        padding-left: 23px;
+    }
 `
 
 const ForLi = styled.li`
@@ -114,6 +204,15 @@ const ForLi = styled.li`
     font-size: 22px;
     line-height: 40px;
     padding-left: 5px;
+
+    @media (max-width: 800px) {
+        font-size: 17px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 12px;
+        line-height: 22px;
+    }
 `
 
 const ForStarSpn = styled.span`
@@ -123,6 +222,16 @@ const ForStarSpn = styled.span`
 const ForBrackets = styled.span`
     font-size: 21px;
     font-weight: 500;
+
+    @media (max-width: 800px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 12px;
+        display: block;
+        font-weight: 400px;
+    }
 `
 
 export default Careers
